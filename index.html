@@ -1,50 +1,474 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Sistemas Operativos | Funciones y características</title><link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones y Características de los Sistemas Operativos</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #080b14;
+            color: #f5f7ff;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: rgba(8, 11, 20, 0.92);
+            border-bottom: 1px solid #273047;
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo span {
+            color: #27d3b2;
+        }
+
+        .menu {
+            display: flex;
+            gap: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #aeb6ca;
+            padding: 9px 13px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .menu a:hover,
+        .menu a.active {
+            background: #151b2d;
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            min-height: 620px;
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            color: #27d3b2;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(2.7rem, 6vw, 5rem);
+            line-height: 1;
+            margin: 15px 0 25px;
+            letter-spacing: -3px;
+        }
+
+        .lead {
+            color: #aeb6ca;
+            font-size: 1.1rem;
+            max-width: 650px;
+        }
+
+        .badges {
+            margin-top: 25px;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid #273047;
+            color: #aeb6ca;
+            border-radius: 20px;
+            padding: 7px 12px;
+            margin: 4px;
+            font-size: 0.85rem;
+        }
+
+        .visual {
+            background: linear-gradient(145deg, #151b2d, #0d1120);
+            border: 1px solid #273047;
+            border-radius: 25px;
+            padding: 25px;
+        }
+
+        .computer {
+            background: #080b14;
+            border: 1px solid #303950;
+            border-radius: 18px;
+            overflow: hidden;
+        }
+
+        .top {
+            padding: 12px;
+            border-bottom: 1px solid #252c3e;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #566078;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .screen {
+            padding: 30px 20px;
+        }
+
+        .line {
+            height: 11px;
+            background: #29334b;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .line.short {
+            width: 50%;
+        }
+
+        .line.medium {
+            width: 75%;
+        }
+
+        section {
+            padding: 70px 0;
+        }
+
+        .section-title {
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            margin: 10px 0;
+        }
+
+        .section-title p {
+            color: #aeb6ca;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            background: #111625;
+            border: 1px solid #273047;
+            border-radius: 20px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #7c5cff;
+        }
+
+        .icon {
+            font-size: 2rem;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .card p {
+            color: #aeb6ca;
+        }
+
+        .quote {
+            margin-top: 40px;
+            padding: 25px;
+            background: #111625;
+            border-left: 4px solid #7c5cff;
+            color: #d8dced;
+        }
+
+        footer {
+            border-top: 1px solid #273047;
+            padding: 35px 0;
+            color: #aeb6ca;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 70px 0;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 10px;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<nav><div class="container navin"><a class="logo" href="index.html">SO<span>.</span></a>
-<div class="links"><a class="active" href="index.html">Funciones</a><a href="evolucion.html">Evolución histórica</a></div></div></nav>
+
+<nav>
+    <div class="nav-container">
+        <div class="logo">Sistemas<span>Operativos.</span></div>
+
+        <div class="menu">
+            <a href="index.html" class="active">Funciones</a>
+            <a href="../evolucion-historica/index.html">Evolución histórica</a>
+        </div>
+    </div>
+</nav>
 
 <main>
-<section class="container hero">
-<div><div class="eyebrow">Sistemas operativos</div>
-<h1>El software que hace posible usar una computadora.</h1>
-<p class="lead">Un sistema operativo administra los recursos del equipo y proporciona el entorno donde se ejecutan las aplicaciones. Es el puente entre el hardware, el software y el usuario.</p>
-<span class="badge">Gestión de recursos</span><span class="badge">Seguridad</span><span class="badge">Interfaz</span>
-</div>
-<div class="visual" aria-label="Ilustración de una interfaz de sistema operativo">
-<div class="os-window"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
-<div class="screen"><div class="code-line mid"></div><div class="code-line"></div><div class="code-line short"></div><div class="code-line"></div><div class="code-line mid"></div></div></div>
-</div>
-</section>
 
-<section class="container">
-<div class="section-head"><div class="eyebrow">01 · Funciones</div><h2>¿Qué hace un sistema operativo?</h2><p class="lead">Coordina las partes esenciales del sistema para que diferentes programas puedan funcionar de manera ordenada y segura.</p></div>
-<div class="grid">
-<article class="card"><div class="icon">⚙️</div><h3>Gestión de procesos</h3><p>Organiza los programas que se están ejecutando, asignando tiempo de CPU y coordinando sus actividades.</p></article>
-<article class="card"><div class="icon">🧠</div><h3>Gestión de memoria</h3><p>Controla el uso de la memoria RAM y asigna espacio a los procesos para evitar conflictos.</p></article>
-<article class="card"><div class="icon">💾</div><h3>Archivos y almacenamiento</h3><p>Administra archivos, carpetas y dispositivos de almacenamiento mediante sistemas de archivos.</p></article>
-<article class="card"><div class="icon">🔌</div><h3>Dispositivos</h3><p>Permite que el sistema y las aplicaciones se comuniquen con periféricos como teclado, pantalla, discos e impresoras.</p></article>
-<article class="card"><div class="icon">🛡️</div><h3>Seguridad</h3><p>Controla usuarios, permisos y acceso a recursos para proteger la información y el funcionamiento del equipo.</p></article>
-<article class="card"><div class="icon">🖥️</div><h3>Interfaz de usuario</h3><p>Ofrece interfaces gráficas o de línea de comandos para que las personas puedan interactuar con el sistema.</p></article>
-</div>
-</section>
+    <section class="container hero">
 
-<section class="container">
-<div class="section-head"><div class="eyebrow">02 · Características</div><h2>Lo que distingue a un SO moderno</h2></div>
-<div class="grid">
-<article class="card"><h3>Multitarea</h3><p>Puede mantener varios procesos activos y repartir los recursos entre ellos.</p></article>
-<article class="card"><h3>Multiusuario</h3><p>Puede gestionar cuentas y permisos diferentes para distintos usuarios.</p></article>
-<article class="card"><h3>Portabilidad</h3><p>Los sistemas operativos se adaptan a diferentes tipos de dispositivos y arquitecturas.</p></article>
-<article class="card"><h3>Estabilidad</h3><p>Busca mantener los servicios funcionando incluso cuando una aplicación presenta problemas.</p></article>
-<article class="card"><h3>Conectividad</h3><p>Integra funciones de red para comunicación con otros equipos y servicios.</p></article>
-<article class="card"><h3>Escalabilidad</h3><p>Puede aprovechar desde recursos modestos hasta hardware de alto rendimiento.</p></article>
-</div>
-<div class="quote">En pocas palabras: el sistema operativo no es solamente “la pantalla que vemos”; es la capa que coordina recursos, aplicaciones y dispositivos.</div>
-</section>
+        <div>
+            <div class="eyebrow">Sistemas operativos</div>
+
+            <h1>
+                El software que hace posible usar una computadora.
+            </h1>
+
+            <p class="lead">
+                Un sistema operativo administra los recursos del equipo
+                y proporciona el entorno donde se ejecutan las aplicaciones.
+                Es el puente entre el hardware, el software y el usuario.
+            </p>
+
+            <div class="badges">
+                <span class="badge">Gestión de recursos</span>
+                <span class="badge">Seguridad</span>
+                <span class="badge">Interfaz</span>
+            </div>
+        </div>
+
+        <div class="visual">
+
+            <div class="computer">
+
+                <div class="top">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <div class="screen">
+                    <div class="line medium"></div>
+                    <div class="line"></div>
+                    <div class="line short"></div>
+                    <div class="line"></div>
+                    <div class="line medium"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+
+        <div class="section-title">
+            <div class="eyebrow">01 · Funciones</div>
+
+            <h2>¿Qué hace un sistema operativo?</h2>
+
+            <p>
+                Coordina las partes esenciales del sistema para que
+                diferentes programas puedan funcionar de manera ordenada
+                y segura.
+            </p>
+        </div>
+
+
+        <div class="grid">
+
+            <article class="card">
+                <div class="icon">⚙️</div>
+                <h3>Gestión de procesos</h3>
+                <p>
+                    Organiza los programas que se están ejecutando,
+                    asignando tiempo de CPU y coordinando sus actividades.
+                </p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🧠</div>
+                <h3>Gestión de memoria</h3>
+                <p>
+                    Controla el uso de la memoria RAM y asigna espacio
+                    a los procesos para evitar conflictos.
+                </p>
+            </article>
+
+            <article class="card">
+                <div class="icon">💾</div>
+                <h3>Archivos y almacenamiento</h3>
+                <p>
+                    Administra archivos, carpetas y dispositivos de
+                    almacenamiento mediante sistemas de archivos.
+                </p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🔌</div>
+                <h3>Dispositivos</h3>
+                <p>
+                    Permite que el sistema y las aplicaciones se comuniquen
+                    con teclado, pantalla, discos, impresoras y otros
+                    periféricos.
+                </p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🛡️</div>
+                <h3>Seguridad</h3>
+                <p>
+                    Controla usuarios, permisos y acceso a recursos para
+                    proteger la información y el funcionamiento del equipo.
+                </p>
+            </article>
+
+            <article class="card">
+                <div class="icon">🖥️</div>
+                <h3>Interfaz de usuario</h3>
+                <p>
+                    Ofrece interfaces gráficas o de línea de comandos para
+                    interactuar con el sistema.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+
+        <div class="section-title">
+            <div class="eyebrow">02 · Características</div>
+
+            <h2>Lo que distingue a un sistema operativo moderno</h2>
+        </div>
+
+
+        <div class="grid">
+
+            <article class="card">
+                <h3>Multitarea</h3>
+                <p>
+                    Puede mantener varios procesos activos y repartir
+                    los recursos entre ellos.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Multiusuario</h3>
+                <p>
+                    Permite gestionar cuentas y permisos diferentes
+                    para distintos usuarios.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Portabilidad</h3>
+                <p>
+                    Los sistemas operativos pueden adaptarse a diferentes
+                    dispositivos y arquitecturas.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Estabilidad</h3>
+                <p>
+                    Busca mantener los servicios funcionando incluso
+                    cuando una aplicación presenta problemas.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Conectividad</h3>
+                <p>
+                    Integra funciones de red para comunicarse con otros
+                    equipos y servicios.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Escalabilidad</h3>
+                <p>
+                    Puede aprovechar desde recursos modestos hasta
+                    hardware de alto rendimiento.
+                </p>
+            </article>
+
+        </div>
+
+
+        <div class="quote">
+            <strong>En pocas palabras:</strong>
+            el sistema operativo no es solamente la pantalla que vemos;
+            es la capa que coordina recursos, aplicaciones y dispositivos.
+        </div>
+
+    </section>
+
 </main>
-<footer><div class="container">Elaborado por <strong>Miguel Ángel Barrón Hernández</strong> · Sistemas Operativos</div></footer>
-</body></html>
+
+
+<footer>
+    Elaborado por <strong>Miguel Ángel Barrón Hernández</strong>
+    · Sistemas Operativos
+</footer>
+
+</body>
+</html>
