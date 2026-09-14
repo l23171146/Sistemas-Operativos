@@ -36,10 +36,8 @@ En esta práctica no se utilizó un lenguaje de programación. Se incluyeron en 
 Esta práctica no requiere un diagrama de circuito, ya que se realizó mediante comandos en la terminal de Ubuntu.
 
 ## Video del funcionamiento
-
-
 [Readme](Video/readme.txt)
-[Ver video de la práctica] https://youtu.be/vP2cvBGG-38
+[Ver video de la práctica](https://youtu.be/vP2cvBGG-38)
 
 ## Evidencias
 
