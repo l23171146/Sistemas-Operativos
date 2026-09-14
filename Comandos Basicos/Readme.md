@@ -44,8 +44,8 @@ Esta práctica no requiere un diagrama de circuito, ya que se realizó mediante 
 ## Evidencias
 
 Las evidencias de la práctica incluyen imágenes de la terminal donde se muestran los comandos ejecutados y los resultados obtenidos.
-- [Ver resultado básico 1](diagrama/basico1.jpeg)
-- [Ver resultado básico 2](diagrama/basico2.jpeg)
+- [Ver resultado básico 1](diagrama/Basico1.jpeg)
+- [Ver resultado básico 2](diagrama/Basico2.jpeg)
 
 Las evidencias principales se encuentran en la carpeta **diagrama**.
 
