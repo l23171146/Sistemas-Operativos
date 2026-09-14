@@ -29,7 +29,7 @@ cd ~
 
 En esta práctica no se utilizó un lenguaje de programación. Se incluyeron en un archivo de texto las líneas de comandos utilizadas durante la práctica.
 
-[Ver comandos utilizados](codigo/readme.txt)
+[Ver comandos utilizados](Codigo/readme.txt)
 
 ## Diagrama
 
@@ -37,15 +37,15 @@ Esta práctica no requiere un diagrama de circuito, ya que se realizó mediante 
 
 ## Video del funcionamiento
 
+(Video/readme.txt)
 
-
-[Ver video de la práctica](video/https://youtu.be/vP2cvBGG-38)
+[Ver video de la práctica](Video/https://youtu.be/vP2cvBGG-38)
 
 ## Evidencias
 
 Las evidencias de la práctica incluyen imágenes de la terminal donde se muestran los comandos ejecutados y los resultados obtenidos.
-- [Ver resultado básico 1](diagrama/Basico1.jpeg)
-- [Ver resultado básico 2](diagrama/Basico2.jpeg)
+- [Ver resultado básico 1](Diagramas/Basico1.jpeg)
+- [Ver resultado básico 2](Diagramas/Basico2.jpeg)
 
 Las evidencias principales se encuentran en la carpeta **diagrama**.
 
@@ -53,13 +53,13 @@ Las evidencias principales se encuentran en la carpeta **diagrama**.
 
 El reporte contiene la explicación de los comandos utilizados, su función y el procedimiento realizado durante la práctica.
 
-[Ver Reporte](reporte/Reporte.pdf)
+[Ver Reporte](Reporte/Reporte.pdf)
 
 ## Resultados
 
 El documento de resultados contiene las evidencias y los resultados obtenidos al ejecutar cada uno de los comandos de la práctica.
 
-[Ver Resultados](resultados/Resultados.pdf)
+[Ver Resultados](Resultados/Resultados.pdf)
 
 ## Conclusiones
 
