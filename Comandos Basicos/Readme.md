@@ -67,5 +67,3 @@ La práctica permitió familiarizarse con el uso de la terminal de Ubuntu y con 
 
 También se practicó la navegación entre directorios mediante el comando `cd`, utilizando `cd ..` para regresar al directorio padre y `cd ~` o `cd` para volver al directorio personal. Estos conocimientos representan una base importante para continuar aprendiendo el manejo de sistemas Linux mediante la línea de comandos.
 
-
-lo unico que quiero es ver si cumplo con los datos requeridos
