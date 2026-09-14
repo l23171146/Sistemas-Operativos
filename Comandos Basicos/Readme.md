@@ -38,8 +38,8 @@ Esta práctica no requiere un diagrama de circuito, ya que se realizó mediante 
 ## Video del funcionamiento
 
 
-[Ver video de la práctica](Video/readme.txt)
-/https://youtu.be/vP2cvBGG-38
+[Readme](Video/readme.txt)
+[Ver video de la práctica] https://youtu.be/vP2cvBGG-38
 
 ## Evidencias
 
