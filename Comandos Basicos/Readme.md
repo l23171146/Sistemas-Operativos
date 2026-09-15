@@ -42,8 +42,9 @@ Esta práctica no requiere un diagrama de circuito, ya que se realizó mediante 
 ## Evidencias
 
 Las evidencias de la práctica incluyen imágenes de la terminal donde se muestran los comandos ejecutados y los resultados obtenidos.
-- [Ver resultado básico 1](Diagramas/Basico1.jpeg)
-- [Ver resultado básico 2](Diagramas/Basico2.jpeg)
+
+![Resultado básico 1](Diagramas/Basico1.jpeg)
+![Resultado básico 2](Diagramas/Basico2.jpeg)
 
 Las evidencias principales se encuentran en la carpeta **diagrama**.
 
@@ -64,4 +65,3 @@ El documento de resultados contiene las evidencias y los resultados obtenidos al
 La práctica permitió familiarizarse con el uso de la terminal de Ubuntu y con algunos de los comandos fundamentales para trabajar con el sistema de archivos. Se comprobó que mediante `ls` es posible consultar el contenido de un directorio y que sus diferentes opciones permiten obtener información adicional sobre los archivos, incluyendo archivos ocultos y tamaños en un formato legible.
 
 También se practicó la navegación entre directorios mediante el comando `cd`, utilizando `cd ..` para regresar al directorio padre y `cd ~` o `cd` para volver al directorio personal. Estos conocimientos representan una base importante para continuar aprendiendo el manejo de sistemas Linux mediante la línea de comandos.
-
