@@ -63,7 +63,7 @@ Las evidencias principales se encuentran en la carpeta **Diagramas**.
 
 El reporte contiene la explicación de los comandos utilizados, su función y el procedimiento realizado durante la práctica.
 
-[Ver Reporte](Reporte/Reporte.pdf)
+[Ver Reporte](Reporte/Reporte de práctica — Crear, copiar, mover y eliminar archivos y carpetas.pdf)
 
 ## Resultados
 
