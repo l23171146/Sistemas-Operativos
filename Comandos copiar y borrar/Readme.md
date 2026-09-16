@@ -1,4 +1,4 @@
-````markdown
+```markdown
 # Crear, copiar, mover y eliminar archivos y carpetas
 
 ## Objetivos
@@ -13,59 +13,17 @@
 
 ## Explicación de comandos
 
-### `mkdir`
+Durante la práctica se utilizaron diferentes comandos de la terminal de Ubuntu para crear, consultar, copiar y eliminar archivos y carpetas.
 
-Se utilizó para crear las carpetas `practica1` y `practica2`.
+El comando `mkdir` se utilizó para crear las carpetas de trabajo de la práctica.
 
-```bash
-mkdir practica1
-mkdir practica2
-````
+El comando `ls -l` permitió consultar el contenido de una carpeta mostrando información detallada de los archivos.
 
-### `ls -l`
+El comando `cp` se utilizó para copiar el archivo `Readme.txt` desde `practica1` hacia `practica2`. Durante esta operación también se trabajó con rutas relativas para indicar la ubicación del archivo de destino.
 
-Se utilizó para mostrar información detallada de los archivos y directorios.
+La opción `-r` del comando `cp` se utilizó para copiar las carpetas `Vacia` e `info` junto con su contenido.
 
-```bash
-ls -l
-```
-
-### `cp`
-
-Se utilizó para copiar el archivo `Readme.txt` de `practica1` a `practica2`.
-
-```bash
-cp Readme.txt ../practica2/
-```
-
-La ruta `../practica2/` se utilizó porque la terminal se encontraba dentro de `practica1`. Los dos puntos (`..`) permiten acceder al directorio padre.
-
-### `cp -r`
-
-Se utilizó para copiar las carpetas `Vacia` e `info` junto con su contenido.
-
-```bash
-cp -r ~/Documents/practica2/Vacia ~/Documents/practica1
-cp -r ~/Documents/practica2/info ~/Documents/practica1
-```
-
-La opción `-r` permite copiar directorios de forma recursiva, incluyendo los archivos y subdirectorios que contienen.
-
-### `rm`
-
-Se utilizó para eliminar el archivo `Readme.txt`.
-
-```bash
-rm Readme.txt
-```
-
-### `rm -r`
-
-Se utilizó para eliminar la carpeta `info` junto con su contenido.
-
-```bash
-rm -r info/
-```
+Finalmente, el comando `rm` se utilizó para eliminar el archivo `Readme.txt`, mientras que `rm -r` permitió eliminar la carpeta `info` junto con su contenido.
 
 ## Código
 
@@ -73,37 +31,23 @@ Los comandos utilizados durante la práctica se encuentran en el archivo:
 
 [Ver código](Codigo/readme.txt)
 
-```markdown
 ## Terminal
 
-Las siguientes capturas muestran de forma nítida los comandos ejecutados durante la práctica y los resultados obtenidos.
+Las capturas de la terminal muestran de forma nítida los comandos ejecutados durante la práctica y los resultados obtenidos.
 
-### Resultado 1
+![Resultado1.jpeg](Terminal/Resultado1.jpeg)
 
-![Resultado 1](Terminal/Resultado1.jpeg)
+![Resultado2.jpeg](Terminal/Resultado2.jpeg)
 
-### Resultado 2
+![Resultado3.jpeg](Terminal/Resultado3.jpeg)
 
-![Resultado 2](Terminal/Resultado2.jpeg)
+![Resultado4.jpeg](Terminal/Resultado4.jpeg)
 
-### Resultado 3
+![Resultado5.jpeg](Terminal/Resultado5.jpeg)
 
-![Resultado 3](Terminal/Resultado3.jpeg)
+![Resultado6.jpeg](Terminal/Resultado6.jpeg)
 
-### Resultado 4
-
-![Resultado 4](Terminal/Resultado4.jpeg)
-
-### Resultado 5
-
-![Resultado 5](Terminal/Resultado5.jpeg)
-
-### Resultado 6
-
-![Resultado 6](Terminal/Resultado6.jpeg)
-
-[Ver carpeta con las capturas](Terminal)
-
+[Ver carpeta Terminal](Terminal)
 
 ## Video
 
@@ -123,11 +67,7 @@ El reporte contiene el análisis del comportamiento del sistema operativo y la j
 
 La práctica permitió comprender el funcionamiento de diferentes comandos de la terminal de Ubuntu para administrar archivos y directorios. `mkdir` permite crear directorios, mientras que `cp` y `cp -r` permiten copiar archivos y carpetas respectivamente.
 
-También se comprendió la diferencia entre rutas absolutas y relativas. El uso de `../practica2/` permitió acceder a una carpeta ubicada en el mismo directorio padre que `practica1`.
+También se comprendió la diferencia entre rutas absolutas y relativas y la forma en que estas determinan la ubicación de los archivos y directorios durante las operaciones realizadas.
 
 Finalmente, los comandos `rm` y `rm -r` permitieron eliminar archivos y directorios. Las actividades demostraron la importancia de utilizar correctamente las rutas y verificar los elementos antes de realizar operaciones de copia o eliminación.
-
-```
-
-Solo queda una cosa pendiente: **poner el enlace real de YouTube** cuando termines de grabar el video.
 ```
