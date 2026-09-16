@@ -55,7 +55,7 @@ El video muestra en vivo el funcionamiento de los comandos utilizados durante la
 
 [Ver información del video](Video/readme.txt)
 
-[Ver video en YouTube](PEGAR_AQUI_EL_ENLACE_DEL_VIDEO)
+[Ver video en YouTube](https://youtu.be/gHyKnqPOEjU)
 
 ## Reporte
 
