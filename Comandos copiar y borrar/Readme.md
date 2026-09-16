@@ -70,4 +70,4 @@ La práctica permitió comprender el funcionamiento de diferentes comandos de la
 También se comprendió la diferencia entre rutas absolutas y relativas y la forma en que estas determinan la ubicación de los archivos y directorios durante las operaciones realizadas.
 
 Finalmente, los comandos `rm` y `rm -r` permitieron eliminar archivos y directorios. Las actividades demostraron la importancia de utilizar correctamente las rutas y verificar los elementos antes de realizar operaciones de copia o eliminación.
-```
+
