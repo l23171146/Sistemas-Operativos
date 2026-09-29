@@ -1,4 +1,3 @@
-
 # Monitoreo de la salud del sistema en Ubuntu
 
 ## Descripción
@@ -13,13 +12,13 @@ Para automatizar el proceso se utiliza `cron`, configurando una tarea que ejecut
 
 * Comprender el funcionamiento básico de los scripts en Bash.
 * Utilizar comandos de Linux para obtener información del sistema.
-* Consultar el estado de la memoria RAM.
-* Consultar el uso del almacenamiento.
+* Consultar el uso de la memoria RAM.
+* Consultar el espacio utilizado del almacenamiento.
 * Obtener información sobre la carga y el tiempo de actividad del sistema.
 * Guardar información generada por un script en un archivo de texto.
 * Utilizar variables y rutas dentro de un script Bash.
 * Automatizar la ejecución de un script mediante `cron`.
-* Comprender el funcionamiento de una tarea programada cada cierto intervalo de tiempo.
+* Comprender el funcionamiento de una tarea programada cada 2 minutos.
 
 ## Comandos utilizados
 
@@ -33,7 +32,7 @@ Se utilizó `mkdir` para crear la carpeta donde se almacenan los registros gener
 
 ### `free`
 
-El comando `free` permite consultar el uso de la memoria RAM del sistema.
+El comando `free` permite consultar información relacionada con el uso de la memoria RAM del sistema.
 
 ### `df`
 
@@ -41,19 +40,23 @@ El comando `df` permite consultar el espacio utilizado y disponible en los siste
 
 ### `uptime`
 
-El comando `uptime` permite obtener información sobre el tiempo que lleva funcionando el sistema y su carga.
+El comando `uptime` permite obtener información sobre el tiempo que lleva funcionando el sistema y la carga del sistema.
 
 ### `crontab`
 
-`crontab` permite configurar tareas programadas para que se ejecuten automáticamente en determinados intervalos de tiempo.
+El comando `crontab` permite configurar tareas programadas para que se ejecuten automáticamente en determinados intervalos de tiempo.
 
-En esta práctica se utilizó la siguiente regla:
+En esta práctica se utilizó la siguiente configuración:
 
-```cron
+```text
 */2 * * * * /home/gabriel/Documents/Practica_Salud/Codigo/monitor_salud.sh
 ```
 
-Esta configuración indica que el script debe ejecutarse cada 2 minutos.
+Esta expresión indica que el script debe ejecutarse cada 2 minutos.
+
+### `cat`
+
+Se utilizó `cat` para consultar el contenido del archivo donde se almacenan los registros generados por el script.
 
 ## Funcionamiento del script
 
@@ -72,30 +75,44 @@ Al utilizar `cron`, el proceso se realiza automáticamente cada 2 minutos sin ne
 
 ## Evidencias
 
-Las capturas de los comandos ejecutados y las pruebas realizadas durante la práctica se encuentran en la carpeta `Terminal`.
+Las capturas de los comandos ejecutados durante la práctica se encuentran en la carpeta [Terminal](Terminal).
+
+### Resultado 1
+
+[Resultado1.jpeg](Terminal/Resultado1.jpeg)
+
+### Resultado 2
+
+[Resultado2.jpeg](Terminal/Resultado2.jpeg)
+
+### Resultado 3
+
+[Resultado3.jpeg](Terminal/Resultado3.jpeg)
+
+### Resultado 4
+
+[Resultado4.jpeg](Terminal/Resultado4.jpeg)
+
+### Resultado 5
+
+[Resultado5.jpeg](Terminal/Resultado5.jpeg)
+
+## Código
+
+El script utilizado en la práctica se encuentra en la carpeta [Codigo](Codigo).
+
+* [monitor_salud.sh](Codigo/monitor_salud.sh)
 
 ## Reporte
 
-El análisis formal de la práctica se encuentra en el documento PDF ubicado en la carpeta `Reporte`.
+El documento PDF con el análisis de la práctica se encuentra en la carpeta [Reporte](Reporte).
 
-## Video
-
-En el video se demuestra el funcionamiento del script, la configuración de `cron` y la generación de los registros del estado del sistema.
+* [Reporte.pdf](Reporte/Reporte.pdf)
 
 ## Conclusiones técnicas
 
-La práctica permitió comprender cómo Bash puede utilizarse para automatizar tareas relacionadas con la administración y supervisión de un sistema Linux. Mediante diferentes comandos fue posible obtener información sobre recursos importantes como la memoria RAM, el almacenamiento y la carga del sistema.
+La práctica permitió comprender cómo Bash puede utilizarse para automatizar tareas relacionadas con la supervisión de un sistema Linux. Mediante diferentes comandos fue posible obtener información sobre recursos importantes como la memoria RAM, el almacenamiento, la carga y el tiempo de actividad del sistema.
 
-También se comprobó la utilidad de `cron` para ejecutar procesos automáticamente en intervalos determinados. En este caso, el script se configuró para ejecutarse cada 2 minutos y almacenar los resultados en un archivo dentro de la carpeta personal del usuario.
+También se comprobó la utilidad de `cron` para ejecutar procesos automáticamente en intervalos determinados. En esta práctica, el script se configuró para ejecutarse cada 2 minutos y almacenar los resultados en un archivo dentro de la carpeta personal del usuario.
 
-El uso de registros permite conservar información de diferentes momentos y observar el comportamiento del sistema sin tener que consultar manualmente cada recurso.
-
-## Integrantes
-
-* Gabriel
-* Javier
-* Rosa
-
-## Repositorio
-
-Link del repositorio de GitHub: [Agregar aquí el enlace del repositorio]
+Los registros obtenidos muestran que los recursos del sistema pueden cambiar con el paso del tiempo dependiendo de los procesos y aplicaciones que se encuentren ejecutándose. El almacenamiento de estos datos permite conservar un historial sencillo del estado de la computadora y observar dichas variaciones.
