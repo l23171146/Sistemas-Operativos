@@ -103,9 +103,12 @@ El reporte formal de la práctica se encuentra en:
 
 ## Video
 
-En el siguiente enlace se encuentra el video de demostración de la práctica:
+En la siguiente carpeta se encuentra el video de demostración de la práctica:
 
-[Ver video](PON_AQUI_EL_LINK_DEL_VIDEO)
+[Ver carpeta de video](Video)
+
+[Ver video de la práctica](PON_AQUI_EL_LINK_DEL_VIDEO)
+
 
 ## Conclusiones técnicas
 
