@@ -18,101 +18,99 @@ Para automatizar el proceso se utiliza `cron`, configurando una tarea que ejecut
 * Guardar información generada por un script en un archivo de texto.
 * Utilizar variables y rutas dentro de un script Bash.
 * Automatizar la ejecución de un script mediante `cron`.
-* Comprender el funcionamiento de una tarea programada cada 2 minutos.
 
 ## Comandos utilizados
 
 ### `chmod`
 
-Se utilizó `chmod` para otorgar permisos de ejecución al script y permitir que pueda ejecutarse como un programa.
+Permite modificar los permisos de un archivo para poder ejecutar el script.
 
 ### `mkdir`
 
-Se utilizó `mkdir` para crear la carpeta donde se almacenan los registros generados por el script.
+Permite crear directorios. En el script se utiliza para crear la carpeta donde se almacenan los registros.
 
 ### `free`
 
-El comando `free` permite consultar información relacionada con el uso de la memoria RAM del sistema.
+Permite consultar el uso de la memoria RAM y el espacio disponible.
 
 ### `df`
 
-El comando `df` permite consultar el espacio utilizado y disponible en los sistemas de archivos.
+Permite consultar el espacio utilizado y disponible en las unidades de almacenamiento.
 
 ### `uptime`
 
-El comando `uptime` permite obtener información sobre el tiempo que lleva funcionando el sistema y la carga del sistema.
+Muestra información sobre el tiempo que lleva funcionando el sistema y la carga del sistema.
 
 ### `crontab`
 
-El comando `crontab` permite configurar tareas programadas para que se ejecuten automáticamente en determinados intervalos de tiempo.
-
-En esta práctica se utilizó la siguiente configuración:
-
-```text
-*/2 * * * * /home/gabriel/Documents/Practica_Salud/Codigo/monitor_salud.sh
-```
-
-Esta expresión indica que el script debe ejecutarse cada 2 minutos.
-
-### `cat`
-
-Se utilizó `cat` para consultar el contenido del archivo donde se almacenan los registros generados por el script.
+Permite programar tareas automáticas para que se ejecuten en determinados intervalos de tiempo.
 
 ## Funcionamiento del script
 
-El script `monitor_salud.sh` crea la carpeta `salud_computadora` dentro del directorio personal del usuario si esta no existe.
+El script crea una carpeta llamada `salud_computadora` dentro de la carpeta personal del usuario y genera un archivo llamado `registro_salud.txt`.
 
-Posteriormente registra la fecha y hora de cada ejecución y obtiene información sobre:
+En cada ejecución se registra:
 
-* Memoria RAM.
-* Espacio de almacenamiento.
+* Fecha y hora.
+* Estado de la memoria RAM.
+* Uso del almacenamiento.
 * Carga del sistema.
 * Tiempo de actividad del equipo.
 
-Toda esta información se almacena en el archivo `registro_salud.txt`.
-
-Al utilizar `cron`, el proceso se realiza automáticamente cada 2 minutos sin necesidad de ejecutar manualmente el script.
-
-## Evidencias
-
-Las capturas de los comandos ejecutados durante la práctica se encuentran en la carpeta [Terminal](Terminal).
-
-### Resultado 1
-
-[Resultado1.jpeg](Terminal/Resultado1.jpeg)
-
-### Resultado 2
-
-[Resultado2.jpeg](Terminal/Resultado2.jpeg)
-
-### Resultado 3
-
-[Resultado3.jpeg](Terminal/Resultado3.jpeg)
-
-### Resultado 4
-
-[Resultado4.jpeg](Terminal/Resultado4.jpeg)
-
-### Resultado 5
-
-[Resultado5.jpeg](Terminal/Resultado5.jpeg)
+La ejecución automática se configuró mediante `cron` para realizar un registro cada 2 minutos.
 
 ## Código
 
-El script utilizado en la práctica se encuentra en la carpeta [Codigo](Codigo).
+El script utilizado en la práctica se encuentra en la carpeta:
 
-* [monitor_salud.sh](Codigo/monitor_salud.sh)
+[Ver código](Codigo)
+
+[Ver monitor_salud.sh](Codigo/monitor_salud.sh)
+
+## Evidencias
+
+Las capturas muestran la ejecución del script, la configuración de la tarea automática y los registros generados por el sistema.
+
+[Ver carpeta de evidencias](Terminal)
+
+### Resultado 1
+
+![Resultado 1](Terminal/Resultado1.jpeg)
+
+### Resultado 2
+
+![Resultado 2](Terminal/Resultado2.jpeg)
+
+### Resultado 3
+
+![Resultado 3](Terminal/Resultado3.jpeg)
+
+### Resultado 4
+
+![Resultado 4](Terminal/Resultado4.jpeg)
+
+### Resultado 5
+
+![Resultado 5](Terminal/Resultado5.jpeg)
 
 ## Reporte
 
-El documento PDF con el análisis de la práctica se encuentra en la carpeta [Reporte](Reporte).
+El reporte formal de la práctica se encuentra en:
 
-* [Reporte.pdf](Reporte/Reporte.pdf)
+[Ver reporte](Reporte)
+
+[Ver Reporte.pdf](Reporte/Reporte.pdf)
+
+## Video
+
+En el siguiente enlace se encuentra el video de demostración de la práctica:
+
+[Ver video](PON_AQUI_EL_LINK_DEL_VIDEO)
 
 ## Conclusiones técnicas
 
-La práctica permitió comprender cómo Bash puede utilizarse para automatizar tareas relacionadas con la supervisión de un sistema Linux. Mediante diferentes comandos fue posible obtener información sobre recursos importantes como la memoria RAM, el almacenamiento, la carga y el tiempo de actividad del sistema.
+La práctica permitió comprender cómo un sistema Linux puede ser monitoreado mediante un script en Bash y cómo sus tareas pueden automatizarse mediante `cron`.
 
-También se comprobó la utilidad de `cron` para ejecutar procesos automáticamente en intervalos determinados. En esta práctica, el script se configuró para ejecutarse cada 2 minutos y almacenar los resultados en un archivo dentro de la carpeta personal del usuario.
+El uso de comandos como `free`, `df` y `uptime` permitió obtener información relevante sobre los recursos del sistema, mientras que el uso de archivos de texto permitió conservar un historial de los registros obtenidos.
 
-Los registros obtenidos muestran que los recursos del sistema pueden cambiar con el paso del tiempo dependiendo de los procesos y aplicaciones que se encuentren ejecutándose. El almacenamiento de estos datos permite conservar un historial sencillo del estado de la computadora y observar dichas variaciones.
+La automatización mediante `cron` permite realizar estas comprobaciones periódicamente sin necesidad de ejecutar manualmente el script, facilitando el seguimiento del estado de la computadora.
