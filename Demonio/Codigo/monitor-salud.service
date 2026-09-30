@@ -1,0 +1,13 @@
+[Unit]
+Description=Servicio de monitoreo de salud del sistema
+After=network.target
+
+[Service]
+Type=simple
+User=gabriel
+ExecStart=/home/gabriel/Documents/Practica_Systemd/Codigo/monitor-salud.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
