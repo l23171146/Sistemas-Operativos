@@ -51,11 +51,19 @@ En esta carpeta se encuentra el script utilizado para realizar el monitoreo del 
 
 ## Reporte
 
-[Ver reporte](Reporte/)
+El reporte formal de la práctica se encuentra en:
+
+[Ver reporte](Reporte)
+
+[Ver Reporte.pdf](Reporte/Reporte.pdf)
 
 ## Video
 
-[Ver video](Video/)
+En la siguiente carpeta se encuentra el video de demostración de la práctica:
+
+[Ver carpeta de video](Video)
+
+[Ver video de la práctica](https://youtu.be/9e3agb-fALY)
 
 ## Conclusión
 
