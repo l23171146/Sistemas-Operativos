@@ -107,7 +107,7 @@ En la siguiente carpeta se encuentra el video de demostración de la práctica:
 
 [Ver carpeta de video](Video)
 
-[Ver video de la práctica](PON_AQUI_EL_LINK_DEL_VIDEO)
+[Ver video de la práctica](https://youtu.be/h7FRVF_FIuY)
 
 
 ## Conclusiones técnicas
